@@ -1,9 +1,9 @@
 # Learning sources and courses
 
-- [Learn to Program](http://inventwithpython.com/]
+- [Learn to Program](http://inventwithpython.com/)
 - [Full Stack Python](https://www.fullstackpython.com/)
 - [Automate the Boring Stuff with Python](https://automatetheboringstuff.com/)
-- [Dive Into Python 3](Dive Into Python 3)
+- [Dive Into Python 3 ](https://diveintopython3.net/)
 - [Cheat sheets](https://www.reddit.com/r/Python/comments/9iadda/python_cheat_sheet_for_beginners_and_experts/)
 - [Python libraries](https://geekyhumans.com/python-libraries/)
 # Exercises
