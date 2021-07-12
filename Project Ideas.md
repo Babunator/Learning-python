@@ -12,6 +12,7 @@
  - [40+ Project ideas](https://kalebujordan.dev/40-python-projects-ideas/)
  - [project idea list Forum](https://www.dreamincode.net/forums/topic/78802-martyr2s-mega-project-ideas-list/)
 # Algorithms and AIs
+- [Competition to programm 2 AIs against each other)(https://www.codecup.nl/login.php)
 - [Finding the shortest path](https://www.reddit.com/r/Python/comments/gqp5jn/finding_the_shortest_path_between_two_points/)
 
 # Games
