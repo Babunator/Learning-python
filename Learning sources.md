@@ -1,11 +1,6 @@
 # Learning sources and courses
 
 - [Cheat sheets](https://www.reddit.com/r/Python/comments/9iadda/python_cheat_sheet_for_beginners_and_experts/)
--[]()
--[]()
--[]()
--[]()
--[]()
 
 # Exercises
 
@@ -24,4 +19,4 @@
 -[Checkio](https://py.checkio.org/)
 -[Codinggame](https://www.codingame.com/start)
 -[Codecombat](https://codecombat.com/play/level/dungeons-of-kithgard)
--[]()
+
