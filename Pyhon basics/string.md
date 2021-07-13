@@ -21,6 +21,13 @@ print(str1+str2)
 but we can do this using an str() function and it will convert the the int into str then you can concatenate
 ```
 
+* Also possible is a string replication operator
+
+```
+'Alice' * 5
+'AliceAliceAliceAliceAlice'
+```
+
 * You can also use the **+=** operator to concatenate strings
 
 ```Python
@@ -50,6 +57,12 @@ print(x[0])
 # [] We use this for index
 # This is useful for lists
 ```
+* string[start : end : step]
+* start : We provide the starting index.
+* end : We provide the end index(this is not included in substring).
+* step : It is an optional argument that determines the increment between each index for slicing.
+* Negative Indexing also possile to access characters from the end of a string
+
 
 #### Converting DataTypes
 * We use built-in functions to convert the data types.
