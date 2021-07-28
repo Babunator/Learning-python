@@ -7,13 +7,16 @@ function findBestMove(board):
     return bestMove
     
 function minimax(board, depth, isMaximizingPlayer):
-
+       
+    #If  Maximizer has won the game return positive value, for Minimizer negative, for tie 0
     if current board state is a terminal state :
         return value of the board
     
     if isMaximizingPlayer :
         bestVal = -INFINITY 
+        # Traverse through all cells/board positions
         for each move in board :
+            #Call minimax recursively and choose the maximum value
             value = minimax(board, depth+1, false)
             bestVal = max( bestVal, value) 
         return bestVal
@@ -21,6 +24,7 @@ function minimax(board, depth, isMaximizingPlayer):
     else :
         bestVal = +INFINITY 
         for each move in board :
+            #Call minimax recursively and choose the minimum value
             value = minimax(board, depth+1, true)
             bestVal = min( bestVal, value) 
         return bestVal 
