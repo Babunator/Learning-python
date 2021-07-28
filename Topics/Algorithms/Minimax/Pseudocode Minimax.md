@@ -1,4 +1,6 @@
-# Example minimax:
+# Pseudocode Minimax (for e.g Tic-Tac-Toe)
+
+```
 function findBestMove(board):
     bestMove = NULL
     for each move in board :
@@ -34,3 +36,4 @@ if maximizer has won:
 
 else if minimizer has won:
     return LOOSE_SCORE + depth
+```
