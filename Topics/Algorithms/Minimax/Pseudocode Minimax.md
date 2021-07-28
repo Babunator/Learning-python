@@ -3,6 +3,7 @@
 ```
 function findBestMove(board):
     bestMove = NULL
+    # Traverse all cells, evaluate minimax function for all empty cells. And return the cell with optimal value
     for each move in board :
         if current move is better than bestMove
             bestMove = current move
