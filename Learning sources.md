@@ -26,3 +26,14 @@
 -[Codinggame](https://www.codingame.com/start)
 -[Codecombat](https://codecombat.com/play/level/dungeons-of-kithgard)
 
+
+https://www.udemy.com/course/complete-python-bootcamp/learn/lecture/9431354?start=0#overview
+http://www.pythonchallenge.com/index.php
+https://adriann.github.io/programming_problems.html
+https://pybit.es/category/code-challenges/
+http://www.cse.msu.edu/%7Ecse231/PracticeOfComputingUsingPython/index.php
+https://www.hackinscience.org/exercises/comparisons
+https://codingbat.com/python
+http://www.codeabbey.com/index/task_list
+https://projecteuler.net/archives
+https://thecodingtrain.com/CodingChallenges/
