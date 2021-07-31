@@ -1,7 +1,10 @@
 #### Python Data Types
 
-* Bool: True or False values
 * int : It's an integer like 5,3,4
+* float: a data type composed of a number that is not an integer, because it includes a fraction represented in decimal format. 1.2, 2.55
+* Int and float can use standard arithmetic operations, +, -, *, /, and ** (exponentiation). Other very useful operations are the remainder (modulo) operator, %, and integer division, //. \
+* Bool: True or False values (often used with relational and logical operators)
+![alt_text](https://i.imgur.com/SwrD4n3.png)
 * str : It's a sequence of characters for example "Your name" this is a string
 * list : It's an ordered sequence of different data types for example ['1','apple','10.5']
 * tuple : It's an immutable ordered sequence of different data types: ('1', 'apple', '10.5')
