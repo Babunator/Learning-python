@@ -30,6 +30,22 @@
   -  start	Optional. Where to start the search. Default is 0
   -  end	Optional. Where to end the search. Default is to the end of the string
 
+## import Random Module
+### Randint()
+- The randint() method returns an integer number selected element from the specified range.
+- Note: This method is an alias for randrange(start, stop+1).
+- random.randint(start, stop)
+  - start	Required. An integer specifying at which position to start.
+  - stop	Required. An integer specifying at which position to end. Here is stop included!
+### choice()
+- The choice() method returns a randomly selected element from the specified sequence.
+- The sequence can be a string, a range, a list, a tuple or any other kind of sequence.
+- random.choice(sequence)##
+
+## Import string
+### string.ascii_lowercase / string.ascii_uppercase
+- The lowercase / uppercase letters 'abcdefghijklmnopqrstuvwxyz'. This value is not locale-dependent and will not change.
+
 ## Stirng Methods
 
 ### split()
