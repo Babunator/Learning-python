@@ -1,16 +1,35 @@
-#### Python Data Types
-
+# Python Data Types
+##Numeric classes
 * int : It's an integer like 5,3,4
 * float: a data type composed of a number that is not an integer, because it includes a fraction represented in decimal format. 1.2, 2.55
-* Int and float can use standard arithmetic operations, +, -, *, /, and ** (exponentiation). Other very useful operations are the remainder (modulo) operator, %, and integer division, //. \
+* Int and float can use standard arithmetic operations, +, -, *, /, and ** (exponentiation). Other very useful operations are the remainder (modulo) operator, %, and integer division, //. 
+
+## Boolean classes
 * Bool: True or False values (often used with relational and logical operators)
 ![alt_text](https://i.imgur.com/SwrD4n3.png)
-* str : It's a sequence of characters for example "Your name" this is a string
+
+
+## Collection Data Types
+### ordered sequence
 * list : It's an ordered sequence of different data types for example ['1','apple','10.5']
+  * lists are heterogeneous, meaning that the data objects need not all be from the same class 
+- Since lists are considered to be sequentially ordered, they support a number of operations that can be applied to any Python sequence:
+![alt_text](https://i.imgur.com/WCfnH0l.png)
+- Note that the indices for lists (sequences) start counting with 0. The slice operation, myList[1:3], returns a list of items starting with the item indexed by 1 up to but not including the item indexed by 3.
+
+
+- str: Strings are sequential collections of zero or more letters, numbers and other symbols. Called characters
+- A major difference between lists and strings is that lists can be modified while strings cannot. This is referred to as mutability. Lists are mutable; strings are immutable. For example, you can change an item in a list by using indexing and assignment. With a string that change is not allowed.
+
 * tuple : It's an immutable ordered sequence of different data types: ('1', 'apple', '10.5')
+
+### unordered sequence
 * dict : It's a collection of key value pairs {'name':'john'}
-* set : It's a collection of unique data: {1, 'apple', 10.5}
+![alt_text](https://i.imgur.com/BqQ7ZOn.png)
+* set : It's a collection of unique data: {1, 'apple', 10.5}. Sets do not allow duplicates
 * frozenset : It's an immutable collection of unique data: frozenset({1, 'apple', 10.5})
+
+##### Examples
 ```Python 
 x = true # Boolean
 y = "Hello World" # This is a string
