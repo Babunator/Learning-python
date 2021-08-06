@@ -41,7 +41,8 @@ Here:
 `method` 
 ```python3
 __init__() 
-``` is 
+``` 
+is 
 ```python3
 def __init__(self, breed):
 ```
