@@ -257,5 +257,5 @@ del book
 # 159
 # A book is destroyed
 ```
-The __init__(), __str__(), __len__() and __del__() methods\
+**The __init__(), __str__(), __len__() and __del__() methods**\
 These special methods are defined by their use of underscores. They allow us to use Python specific functions on objects created through our class.
