@@ -8,40 +8,55 @@ Allows to create code that is repetable and organized.\
 A `Class` is a blueprint for objects.It can contain methods (functions) and attributes.\
 An `instance` or `object` they are constructed from a class blueprint that contains their class methods and properties.\
 By convention we give classes a name that starts with a capital letter.
-``````python3
+```python3
 # Create a new object type called Sample
 class Sample:
-    pass```\
+    pass
+``` 
+\
 For example, we can create a `class` called Dog. An `attribute` of a dog may be its breed or its name, while a `method` of a dog may be defined by a .bark() method which returns a sound.\
 
 ## Attributes
 The syntax for creating an attribute is:\
-``````python3
-self.attribute = something```\
-There is a special method called:\
-``````python3
-__init__()```\
+```python3
+self.attribute = something
+``` 
+\
+There is a special method called:
+```python3
+__init__()
+``` 
+\
 This method is used to initialize the attributes of an object. For example:
-``````python3
+```python3
 class Dog:
     def __init__(self,breed):
         self.breed = breed
         
 sam = Dog(breed='Lab')
-frank = Dog(breed='Huskie') ```
+frank = Dog(breed='Huskie') 
+```
 
-Here:\
+Here:
 `method` 
-``````python3
-__init__() ``` is ``````python3
-def __init__(self, breed):```´\
+```python3
+__init__() 
+``` is 
+```python3
+def __init__(self, breed):
+```
+\
 is called automatically right after the `object` has been created:
 ```python3
-self.breed = breed```\
+self.breed = breed
+```
+\
 access these attributes like this:
-``````python3
-sam.breed```\
-\ In Python there are also class object attributes and theyare the same for any instance of the class. For example, we could create the attribute species for the Dog class. Dogs, regardless of their breed, name, or other attributes, will always be mammals.\
+```python3
+sam.breed
+```
+\
+In Python there are also class object attributes and theyare the same for any instance of the class. For example, we could create the attribute species for the Dog class. Dogs, regardless of their breed, name, or other attributes, will always be mammals.
 ```python3
 class Dog:
     
@@ -64,7 +79,7 @@ sam.species
 Methods are functions defined inside the body of a class. 
 They are used to perform operations with the attributes of our objects.\
 You can basically think of methods as functions acting on an Object that take the Object itself into account through its *self* argument.\
-E.g.\
+E.g.
 ```python3
 class Circle:
     pi = 3.14
@@ -89,13 +104,14 @@ c = Circle()
 print('Radius is: ',c.radius)
 print('Area is: ',c.area)
 print('Circumference is: ',c.getCircumference())
-```\
+```
+\
 In the _init_ method above, in order to calculate the area attribute, we had to call Circle.pi.
 This is because the object does not yet have its own .pi attribute, so we call the Class Object Attribute pi instead.\
 \
 ## Inheritance
 Inheritance is a way to form new classes using classes that have already been defined. The newly formed classes are called derived classes.\
-Important benefits of inheritance are code reuse and reduction of complexity of a program. The derived classes (descendants) override or extend the functionality of base classes (ancestors).\
+Important benefits of inheritance are code reuse and reduction of complexity of a program. The derived classes (descendants) override or extend the functionality of base classes (ancestors).
 ```python3
 class Animal:
     def __init__(self):
@@ -120,6 +136,7 @@ class Dog(Animal):
         print("Woof!")
 
 ```
+
 ```
 d = Dog()
 # Animal created
