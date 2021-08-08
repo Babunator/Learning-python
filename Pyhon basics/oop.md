@@ -1,11 +1,11 @@
 # What is Object Oriented Programming
-Object Oriented Programming (`OOP`) allows to create their own objects that have methods and attributes.\
-Recall that after defining a `objeact` (list, string,... ) with `.methode_name()` syntax.\
+Object Oriented Programming (`OOP`) allows to create their own `objects` that have methods and attributes.\
+Recall that after defining a `object` (list, string,... ) with `.methode_name()` syntax.\
 These `methods` act as functions that use information about the `object`, as well as the `object` itself to return results, ro change the current `object`.\
 Allows to create code that is repetable and organized.\
 \
 ##  Class
-A `Class` is a blueprint for objects.It can contain methods (functions) and attributes.\
+A `Class` is a blueprint for `objects`.It can contain methods (functions) and attributes.\
 An `instance` or `object` they are constructed from a class blueprint that contains their class methods and properties.\
 By convention we give classes a name that starts with a capital letter.
 ```python3
@@ -17,24 +17,30 @@ class Sample:
 For example, we can create a `class` called Dog. An `attribute` of a dog may be its breed or its name, while a `method` of a dog may be defined by a .bark() method which returns a sound.\
 \
 ## Attributes
-The syntax for creating an attribute is:\
+The syntax for creating an `attribute` is:
 ```python3
 self.attribute = something
 ``` 
 \
-There is a special method called:
+There is a special `method` called. :
 ```python3
 __init__()
 ``` 
 \
-This method is used to initialize the attributes of an object. For example:
+This `method` is used to **initialize** the `instance` (an their`attributes`) of an `class`. For example:
 ```python3
 class Dog:
-    def __init__(self,breed):
-        self.breed = breed
+    def __init__(self,breed(1)):
+    # in _init_ metode is the self instance and the argument breed(1)
+        self.breed(2) = breed(1)
+        # assigning the attribute breed(2) using self.atrribute_name = argument
+        # argument and attrubute share by convention the same name, don't get confussed
         
-sam = Dog(breed='Lab')
-frank = Dog(breed='Huskie') 
+sam = Dog(breed(1)='Lab')
+frank = Dog(breed(1)='Huskie')
+
+# using attribute to call the new argument
+sam.breed(2) 
 ```
 
 Here:
@@ -51,13 +57,7 @@ is called automatically right after the `object` has been created:
 ```python3
 self.breed = breed
 ```
-\
-access these attributes like this:
-```python3
-sam.breed
-```
-\
-In Python there are also class object attributes and theyare the same for any instance of the class. For example, we could create the attribute species for the Dog class. Dogs, regardless of their breed, name, or other attributes, will always be mammals.
+In Python there are also `class object attributes` and they are the same for any `instance` of the `class`. For example, we could create the `attribute` species for the Dog `class`. Dogs, regardless of their breed, name, or other attributes, will always be mammals.
 ```python3
 class Dog:
     
@@ -77,9 +77,9 @@ sam.species
 ```
 \
 ## Methods
-Methods are functions defined inside the body of a class. 
-They are used to perform operations with the attributes of our objects.\
-You can basically think of methods as functions acting on an Object that take the Object itself into account through its *self* argument.\
+`Methods` are functions defined inside the body of a `class`. 
+They are used to perform operations with the attributes of our `objects`.\
+You can basically think of `methods` as functions acting on an Object that take the Object itself into account through its *self* argument.\
 E.g.
 ```python3
 class Circle:
@@ -107,12 +107,12 @@ print('Area is: ',c.area)
 print('Circumference is: ',c.getCircumference())
 ```
 \
-In the _init_ method above, in order to calculate the area attribute, we had to call Circle.pi.
-This is because the object does not yet have its own .pi attribute, so we call the Class Object Attribute pi instead.\
+In the `_init_ method` above, in order to calculate the area `attribute`, we had to call ***Circle.pi***.
+This is because the `object` does not yet have its own `.pi attribute`, so we call the `Class Object Attribute` pi instead.\
 \
 ## Inheritance
-Inheritance is a way to form new classes using classes that have already been defined. The newly formed classes are called derived classes.\
-Important benefits of inheritance are code reuse and reduction of complexity of a program. The derived classes (descendants) override or extend the functionality of base classes (ancestors).
+`Inheritance` is a way to form new `classes` using `classes` that have already been defined. The newly formed `classes` are called ***derived*** `classes`.\
+Important benefits of `inheritance` are code reuse and reduction of complexity of a program. The ***derived*** `classes` (descendants) override or extend the functionality of ***base*** `classes` (ancestors).
 ```python3
 class Animal:
     def __init__(self):
@@ -150,15 +150,15 @@ d.eat()
 d.bark()
 # Woof!
 ```
-The Animal is the base class, the Dog is the derived class.\
-The derived class inherits the functionality of the base class.\
+The Animal is the ***base*** `class`, the Dog is the ***derived*** `class`.\
+The ***derived*** `class` inherits the functionality of the ***base*** `class`.\
 - It is shown by the eat() method.
-The derived class modifies existing behavior of the base class.\
+The ***derived*** `class` modifies existing behavior of the ***base*** `class`.\
 - shown by the whoAmI() method.
-Finally, the derived class extends the functionality of the base class, by defining a new bark() method.\
+Finally, the ***derived*** `class` extends the functionality of the ***base*** `class`, by defining a new bark() method.\
 \
 ## Polymorphism
-We've learned that while functions can take in different arguments, methods belong to the objects they act on. In Python, polymorphism refers to the way in which different object classes can share the same method name, and those methods can be called from the same place even though a variety of different objects might be passed in. \
+We've learned that while functions can take in different arguments, methods belong to the `objects` they act on. In Python, polymorphism refers to the way in which different `object` classes can share the same method name, and those methods can be called from the same place even though a variety of different `objects` might be passed in. \
 ```python3
 class Dog:
     def __init__(self, name):
@@ -194,9 +194,9 @@ pet_speak(felix)
 # Felix says Meow!
 ```
 \
-In both cases we were able to pass in different object types, and we obtained object-specific results from the same mechanism.
+In both cases we were able to pass in different `object` types, and we obtained `object`-specific results from the same mechanism.
 
-A more common practice is to use abstract classes and inheritance. An abstract class is one that never expects to be instantiated. For example, we will never have an Animal object, only Dog and Cat objects, although Dogs and Cats are derived from Animals:
+A more common practice is to use abstract `classes` and inheritance. An abstract `class` is one that never expects to be instantiated. For example, we will never have an Animal `object`, only Dog and Cat `objects`, although Dogs and Cats are derived from Animals:
 ```python3
 class Animal:
     def __init__(self, name):    # Constructor of the class
@@ -224,10 +224,10 @@ print(isis.speak())
 ```
 Real life examples of polymorphism include:
 - opening different file types - different tools are needed to display Word, pdf and Excel files
-- adding different objects - the + operator performs arithmetic and concatenation
+- adding different `objects` - the + operator performs arithmetic and concatenation
 \
 # Special Methods
-lasses in Python can implement certain operations with special method names. These methods are not actually called directly but by Python specific language syntax.
+`classes` in Python can implement certain operations with `special method` names. These methods` are not actually called directly but by Python specific language syntax.
 ```python3
 class Book:
     def __init__(self, title, author, pages):
@@ -258,4 +258,4 @@ del book
 # A book is destroyed
 ```
 **The __init__(), __str__(), __len__() and __del__() methods**\
-These special methods are defined by their use of underscores. They allow us to use Python specific functions on objects created through our class.
+These `special method`  are defined by their use of underscores. They allow us to use Python `specific functions` on `objects` created through our `class`.
