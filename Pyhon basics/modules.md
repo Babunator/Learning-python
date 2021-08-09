@@ -39,7 +39,7 @@ We can create package folders to order and store .py modules.
 - add the modules
 - you can add subpackages as well (they need an `__init__.py` as well)
 - to import from package:
-```
+```python 3
 from MyMainPackage.some_main_script import myfun()
 from MyMainPackage.SubPackage import mysubscript
 
@@ -61,7 +61,14 @@ External modules can be found here [PyPi](https://pypi.org/)
 
 
 ## The `__name__` variable
-- The `__name__` variable usually refers to the file name if its the file then it will interpreted as `__main__` 
+- The `__name__` variable usually refers to the file name, if you if you run the file directly (so not e.g not imported) it will interpreted as `__main__` 
 - If it's a module then `__name__` will be interpreted as the `__file_name__`.
 
-**Note** : use `if __name__ = '__main__' `
+**Note** : use `if __name__ == '__main__' `
+```python
+if if __name__ == '__main__':
+    print('This is run directly!")
+else:
+    print('This is imported!')
+```
+```
