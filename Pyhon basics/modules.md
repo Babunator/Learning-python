@@ -32,6 +32,20 @@ import file1 as fn
 fn.hello()
 fn.hey('Jake')
 ```
+## Using packages
+We can create package folders to order and store .py modules.
+- create an folder with package name
+- add an `__init__.py` File. (This one can be empty, it's only there to let python now, that it is a package)
+- add the modules
+- you can add subpackages as well (they need an `__init__.py` as well)
+- to import from package:
+```
+from MyMainPackage.some_main_script import myfun()
+from MyMainPackage.SubPackage import mysubscript
+
+myfun()
+mysubscript.sub_myfun()
+```
 
 ## External Modules
 External modules can be found here [PyPi](https://pypi.org/)
