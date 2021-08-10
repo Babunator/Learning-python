@@ -1,3 +1,4 @@
+# General functions
 ### type() 
 - The type() function returns the type of the specified object
 - type(object, bases, dict)
@@ -37,7 +38,7 @@
   -  start	Optional. Where to start the search. Default is 0
   -  end	Optional. Where to end the search. Default is to the end of the string
 
-## import Random Module
+# import Random Module
 ### Randint()
 - The randint() method returns an integer number selected element from the specified range.
 - Note: This method is an alias for randrange(start, stop+1).
