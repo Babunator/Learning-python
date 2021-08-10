@@ -53,7 +53,7 @@
 ### string.ascii_lowercase / string.ascii_uppercase
 - The lowercase / uppercase letters 'abcdefghijklmnopqrstuvwxyz'. This value is not locale-dependent and will not change.
 
-## Stirng Methods
+# Stirng Methods
 
 ### split()
 - The split() method splits a string into a list. You can specify the separator, default separator is any whitespace.
@@ -79,12 +79,21 @@
   - start	Optional. An Integer. The position to start the search. Default is 0
   - end	Optional. An Integer. The position to end the search. Default is the end of the string
 
-## List Methods
+# List Methods
 
 ### append()
 - The append() method appends an element to the end of the list.
 - list.append(elmnt)
   -  elmnt	Required. An element of any type (string, number, object etc.)
+## extend() 
+- The extend() method adds the specified list elements (or any iterable) to the end of the current list.
+- list.extend(iterable)
+  - iterable	Required. Any iterable (list, set, tuple, etc.)
+## append vs extend
+- append adds an element to a list, and extend concatenates the first list with another list (or another iterable, not necessarily a list.)
+  - x = [1, 2, 3], x.append([4, 5]) --> [1, 2, 3, [4, 5]]
+  - x = [1, 2, 3], x.extend([4, 5]) --> [1, 2, 3, 4, 5]
+ 
 
 ### insert()
 - The insert() method inserts the specified value at the specified position.
@@ -117,7 +126,7 @@
 - list.count(value)
   - value	Required. Any type (string, number, list, tuple, etc.). The value to search for.
 
-## Set Methods 
+# Set Methods 
 ![alt_text](https://i.imgur.com/8nINiKJ.png)
 
 ### add()
@@ -158,7 +167,7 @@
 - The issubset() method returns True if all items in the set exists in the specified set, otherwise it retuns False.
 - set.issubset(set)
 
-## Dictionaries Methods
+# Dictionaries Methods
 
 ### keys()
 - The keys() method returns a view object. The view object contains the keys of the dictionary, as a list.
