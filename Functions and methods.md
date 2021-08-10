@@ -17,7 +17,14 @@
 - When the object is a string, the len() function returns the number of characters in the string.
 - len(object)
   - object	Required. An object. Must be a sequence or a collection
-  - 
+
+### isinstance()
+- The isinstance() function returns True if the specified object is of the specified type, otherwise False.
+- If the type parameter is a tuple, this function will return True if the object is one of the types in the tuple.
+- isinstance(object, type)
+  - object	Required. An object.
+  - type	A type or a class, or a tuple of types and/or classes
+ 
 ### del 
 - The del keyword is used to delete objects. In Python everything is an object, so the del keyword can also be used to delete variables, lists, or parts of a list etc.
 
