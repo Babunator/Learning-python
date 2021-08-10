@@ -23,7 +23,7 @@ with open("file.txt", "w") as file:
 
 ## Create a new file with Python and write some text on it:
 ```python3
-with open("new_file.txt", "w") as file:
+with open("new_file.txt", "x") as file:
     content = file.write("Sample text")
 ```
 
@@ -37,3 +37,6 @@ with open("file.txt", "a") as file:
 ```python3
 with open("file.txt", "a+") as file:
 ```
+
+# Repositioning the cursor
+`file.seek(0)`
