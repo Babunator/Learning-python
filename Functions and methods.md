@@ -93,7 +93,7 @@
 ## append vs extend
 - append adds an element to a list, and extend concatenates the first list with another list (or another iterable, not necessarily a list.)
   - x = [1, 2, 3], x.append([4, 5]) --> [1, 2, 3, [4, 5]]
-  - x = [1, 2, 3], x.extend([4, 5]) --> [1, 2, 3, 4, 5]
+  - x = [1, 2, 3], x.extend([4, 5]) --> [1, 2, 3, 4, 5] 
  
 
 ### insert()
